@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container{
+    padding: 0 10px;
+}
+.fit-img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}

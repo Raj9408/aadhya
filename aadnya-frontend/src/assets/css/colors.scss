@@ -1,0 +1,17 @@
+:root {
+  --ffff: #ffffff;
+  --0C0C :#100C0C;
+  --813F :#FF813F;
+}
+
+$colors: (
+  'ffff': var(--ffff),
+  '0C0C': var(--0C0C),
+  '813F': var(--813F),
+);
+
+@each $name, $color in $colors {
+  .color-#{$name} {
+    color: $color !important;
+  }
+}

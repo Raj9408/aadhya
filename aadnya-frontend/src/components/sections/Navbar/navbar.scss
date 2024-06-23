@@ -1,0 +1,43 @@
+.navbar-container{
+    padding: 20px;
+    background-color: var(--ffff);
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    .nav-links {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .nav-links.active{
+        color: var(--813F);
+        font-weight: 600;
+    }
+    .nav-links.active::after{
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 20px;
+        height: 3px;
+        background-color: var(--813F);
+        transition: width 0.3s ease-in-out;
+    }
+
+    .nav-links::after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: var(--0C0C);
+        transition: width 0.3s ease-in-out;
+    }
+    
+    .nav-links:hover::after {
+        width: 20px;
+    }
+}
